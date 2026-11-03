@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Legado — Política de Privacidade</title>
+<style>
+  :root { --fundo: #f6f4ef; --texto: #1d2129; --suave: #5b6270; --destaque: #8a5c1c; --borda: #e3dfd6; }
+  @media (prefers-color-scheme: dark) { :root { --fundo: #0b1018; --texto: #e7e9ee; --suave: #a3aab8; --destaque: #e0b46a; --borda: #26303f; } }
+  body { margin: 0; background: var(--fundo); color: var(--texto); font: 17px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 8px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; color: var(--destaque); }
+  p, li { color: var(--texto); }
+  .suave { color: var(--suave); }
+  a { color: var(--destaque); }
+  hr { border: none; border-top: 1px solid var(--borda); margin: 40px 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Legado</h1>
+  <p>O Legado é um aplicativo pessoal, para Windows e Android, que organiza a rotina, os hábitos, os estudos, o diário e os objetivos de uma única pessoa: o próprio desenvolvedor. Ele não é vendido nem distribuído ao público.</p>
+
+  <hr>
+
+  <h1 id="privacidade">Política de Privacidade</h1>
+  <p class="suave">Última atualização: 3 de novembro de 2026.</p>
+
+  <h2>1. Onde os dados ficam</h2>
+  <p>Todos os dados do Legado ficam guardados no próprio aparelho do usuário, num banco de dados local. O desenvolvedor não tem servidor e não recebe, coleta, vende nem compartilha nenhum dado. O aplicativo não tem anúncios nem ferramentas de análise de uso.</p>
+
+  <h2>2. Uso do Google Drive</h2>
+  <ul>
+    <li>O Legado usa o Google Drive apenas para sincronizar os dados do usuário entre os aparelhos dele.</li>
+    <li>A única permissão pedida é <strong>drive.appdata</strong>, que dá acesso somente à pasta oculta do próprio aplicativo. O Legado não vê, não lê e não altera nenhum outro arquivo do Google Drive do usuário.</li>
+    <li>Antes de sair do aparelho, tudo é criptografado (AES-GCM de 256 bits) com uma chave derivada de uma frase escolhida pelo usuário. A frase e a chave nunca saem dos aparelhos dele, e nem o Google nem o desenvolvedor conseguem ler os arquivos.</li>
+    <li>O acesso fornecido pelo Google fica guardado só no aparelho do usuário e é usado apenas para enviar e baixar esses arquivos.</li>
+  </ul>
+  <p>O uso e a transferência de informações recebidas das APIs do Google seguem a <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de dados do usuário dos serviços de API do Google</a>, incluindo os requisitos de Uso Limitado.</p>
+
+  <h2>3. Serviços opcionais</h2>
+  <p>Alguns recursos só funcionam se o usuário os ligar. Nesses casos, o aplicativo envia apenas o necessário para cada serviço:</p>
+  <ul>
+    <li>Spotify, stats.fm e Last.fm: leitura das músicas ouvidas e sugestões de artistas parecidos.</li>
+    <li>Google Gemini: o tema de estudo, para gerar sugestões, sem nome nem dados pessoais.</li>
+    <li>Google Books, Open Library e Wikipédia: conferência de títulos de livros e de termos de pesquisa.</li>
+    <li>Duolingo: o nome de usuário público, para mostrar o progresso.</li>
+  </ul>
+
+  <h2>4. Como remover o acesso</h2>
+  <p>O usuário pode desligar a sincronização a qualquer momento em Configurações, no próprio aplicativo, e revogar o acesso do Legado à conta Google em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Os arquivos da pasta oculta do aplicativo podem ser apagados em Google Drive → Configurações → Gerenciar apps.</p>
+
+  <h2>5. Contato</h2>
+  <p>Dúvidas sobre esta política podem ser enviadas ao e-mail de suporte informado na tela de consentimento do Google.</p>
+</main>
+</body>
+</html>
